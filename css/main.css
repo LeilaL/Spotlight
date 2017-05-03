@@ -15,33 +15,54 @@ rose : #E33849*/
   src: url(../font/HoneyScript-SemiBold.ttf);
 }
 
-/***********Mise en page générale****************/
+
+/***********Mise en page générale*********************/
 h1 {
   font-family: "spotlight";
 }
 
 body > div {
   background-color: #3F4847;
-  background-size: cover;
-  height: 100%;
+  /*background-size: cover;*/
+  height: 700px;
+  display: flex;
+}
+
+.logo {
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  display: block;
+  background: url("../img/logo4.png") no-repeat;
+}
+
+.logo:hover{
+  background-image: url("../img/logo3.png");
+}
+
+/****************HEADER ******************************/
+
+h1 {
+  text-align: center;
+  position: absolute;
+  top: 400px;
+  left: -3%;
   width: 100%;
+  color: white;
+  font-size: 6em;
+  font-weight: lighter;
 }
+/****************Accueil******************************/
 
-.logo {display: block;}
-#logo:hover {
- content: url(../img/logo3.png);
-}
-/****************Accueil**************************/
-
-/****************Présentation**************************/
+/****************Présentation*************************/
 
 /****************Réalisation**************************/
 
 /****************Prestations**************************/
 
-/****************Equipe**************************/
+/****************Equipe*******************************/
 
-/****************Contact**************************/
+/****************Contact******************************/
 
 
 
