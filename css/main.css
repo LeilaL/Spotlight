@@ -19,6 +19,18 @@ rose : #E33849*/
 h1 {
   font-family: "spotlight";
 }
+
+body > div {
+  background-color: #3F4847;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.logo {display: block;}
+#logo:hover {
+ content: url(../img/logo3.png);
+}
 /****************Accueil**************************/
 
 /****************Présentation**************************/
