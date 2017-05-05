@@ -95,6 +95,7 @@ h1 {
   margin: auto;
   padding: 0;
   display: flex;
+
   /*max-height: 500px;*/
   /*width: 100%;*/
   max-width: 500px;
@@ -105,7 +106,7 @@ h1 {
 }
 
 .realisation img {
-  margin: 0 1px;
+  margin: auto;
   min-width: 100%;
   height: 100%;
 }
@@ -119,6 +120,7 @@ h1 {
   padding: 0;
 	/*padding: 0;*/
 	display: flex;
+  justify-content: space-between;
 
 	/*CSS3 keyframes animation*/
 	animation-name: AutoSlide;
@@ -129,14 +131,14 @@ h1 {
 
 @keyframes AutoSlide {
 100%, 0%, 5% {left: 0px; /*1ère image*/}
-11.11%, 16% {left: -100.5%; /*2ème image*/}
-22.22%, 27% {left: -201%; /*3ème image*/}
-33.33%, 38% {left: -301.5%; /*4ème image*/}
-44.44%, 49% {left: -402%; /*5ème image*/}
-55.55%, 60% {left: -502.5%; /*6ème image*/}
-66.66%, 71% {left: -603%; /*7ème image*/}
-77.77%, 82% {left: -703.5%; /*8ème image*/}
-88.88%, 98% {left: -804%; /*9ème image*/}
+11.11%, 16% {left: -100%; /*2ème image*/}
+22.22%, 27% {left: -200%; /*3ème image*/}
+33.33%, 38% {left: -300%; /*4ème image*/}
+44.44%, 49% {left: -400%; /*5ème image*/}
+55.55%, 60% {left: -500%; /*6ème image*/}
+66.66%, 71% {left: -600%; /*7ème image*/}
+77.77%, 82% {left: -700%; /*8ème image*/}
+88.88%, 98% {left: -800%; /*9ème image*/}
 }
 
 
@@ -180,17 +182,14 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
     display: flex;
     /*max-height: 500px;*/
     /*width: 100%;*/
-    max-width: 1500px;
+    min-width: 100%;
     overflow: hidden;
-    border:  1px solid red;
-    /*border-bottom: 3px solid #3F4847;*/
-    /*border-top: 3px solid #3F4847;*/
     position: relative;
   }
 
   .realisation img {
-    margin: 0 1px;
-    min-width: 100%;
+    margin: 0 0px;
+    min-width: 33.33%;
     height: 100%;
   }
 
@@ -201,26 +200,19 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
     max-height: 500px;
   	margin: 0;
     padding: 0;
-  	/*padding: 0;*/
   	display: flex;
 
   	/*CSS3 keyframes animation*/
   	animation-name: AutoSlide;
-  	animation-duration: 36s;
+  	animation-duration: 18s;
   	animation-iteration-count: infinite;
   	animation-timing-function: ease-in-out;
   }
 
   @keyframes AutoSlide {
-  100%, 0%, 5% {left: 0px; /*1ère image*/}
-  11.11%, 16% {left: -100.5%; /*2ème image*/}
-  22.22%, 27% {left: -201%; /*3ème image*/}
-  33.33%, 38% {left: -301.5%; /*4ème image*/}
-  44.44%, 49% {left: -402%; /*5ème image*/}
-  55.55%, 60% {left: -502.5%; /*6ème image*/}
-  66.66%, 71% {left: -603%; /*7ème image*/}
-  77.77%, 82% {left: -703.5%; /*8ème image*/}
-  88.88%, 98% {left: -804%; /*9ème image*/}
+  100%, 0%, 15% {left: 0px; /*image 1, 2, 3*/}
+  33.33%, 48% {left: -100%; /*image 4, 5, 6*/}
+  66.66%, 81% {left: -200%; /*image 7, 8, 9*/}
   }
 }
 
