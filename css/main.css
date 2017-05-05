@@ -56,6 +56,14 @@ h1 {
 }
 
 /****************Menu******************************/
+/*.menu input {*/
+  position: fixed;
+  right: 0;
+}
+
+/*.menu {*/
+  position: fixed;
+}
 
 header nav ul {
  list-style-type: none;
@@ -105,20 +113,20 @@ header nav ul {
  transition: 1s;
  display: flex;
  justify-content: space-around;
- font-weight: bold;
  position: inherit;
- margin-top: -70px;
+ margin-top: -120px;
 }
 
 .burger-shower:checked ~ .burger-menu ul {
   display: block;
   height: auto;
   align-items: stretch;
-  margin: 0;
+  /*margin: 0;*/
   /*padding-top: 10px;*/
   padding-left: 0;
   position: inherit;
   margin-top: -20px;
+  /*background-color: #3F4847;*/
 }
 
 .burger-menu ul:hover {
@@ -126,7 +134,7 @@ header nav ul {
 }
 
 .burger-shower:checked ~ .hamburger {
-  bottom : 100px;
+  bottom : 150px;
   position: absolute;
   text-align: center;
   transition: 1s;
@@ -149,9 +157,24 @@ header nav ul {
 }
 
 .social i {
-  margin-left: 21px;
+  margin: 15px;
 }
-/****************Accueil******************************/
+
+.social ul {
+  margin-left: -35px;
+}
+
+.burger-menu ul li:nth-child(1) {
+  margin-left: 46px;
+}
+
+.burger-menu ul li:nth-child(6) {
+  margin-right: 43px;
+}
+
+
+
+/************* ***Accueil******************************/
 
 /****************Présentation*************************/
 
@@ -178,6 +201,18 @@ $$$$$$$$$$$$$$$$$$ TABLET $$$$$$$$$$$$$$$$$$$$$$$$
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
 
 @media (min-width: 600px) {
+
+/**********************Menu***********************/
+.hamburger {
+  /*display: none;*/
+}
+
+.burger-menu ul {
+  background-color: #E33849;
+  display: block;
+  position: relative;
+}
+
 
 }
 
