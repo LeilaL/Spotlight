@@ -99,8 +99,10 @@ h1 {
   border-top: none;
 }
 
-#social i {
+#social>ul i  {
   margin-right: 10px;
+  display: flex;
+  align-items: center;
 }
 
 /*avant le clic*/
@@ -256,6 +258,86 @@ h1 {
 
 
 /****************Prestations**************************/
+.prestation {
+  display: flex;
+  /*justify-content: space-around;*/
+  /*align-content: space-around;*/
+  /*text-align: center;*/
+  padding-bottom: 20px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.packages {
+  color: gray;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 30px;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+  position: relative;
+  padding: 24px;
+  /*z-index: 1;*/
+  font-family: arial;
+}
+
+.packages span {
+  display: inline-block;
+  position: relative;
+  height: 24px;
+  padding: 0 15px;
+  border-radius: 4px;
+  border: 1px solid #e5e5e5;
+  background-color: #E33849;
+  color: black;
+  font-size: 10px;
+  line-height: 24px;
+  z-index: 2;
+}
+
+.packages div::before {
+  display: block;
+  position: absolute;
+  top: 38%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #e5e5e5;
+  content: '';
+  z-index: 1;
+}
+
+.packages:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+  box-shadow: 0 0 90px 0 rgba(0,0,0,0.23);
+  transition: 0.4s;
+}
+
+.packages h3 {
+  color: #3F4847;
+  font-size: 24px;
+  font-weight: 300px;
+}
+
+.packages ul li::before {
+  content: '–';
+}
+
+.packages ul {
+  list-style-type: none;
+  padding: 0;
+  line-height: 1.8;
+}
+
+.packages button {
+  border-radius: 4px;
+  background-color: #E33849;
+  color: #3F4847;
+  font-weight: bold;
+  height: 48px;
+  border: 1px solid #E33849;
+}
 
 /****************Equipe*******************************/
 
