@@ -28,6 +28,7 @@ body > div {
   background-color: #3F4847;
   display: flex;
   height: 100vh;
+  z-index: 1;
 }
 
 .logo {
@@ -593,8 +594,64 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
 
 @media (min-width: 900px) {
 
+
+  /********************Accueil*************/
+
   h1 {
-    left: -1%;
+    left: 7%;
+  }
+
+  /********************mise en page générale*************/
+
+  main {
+    width: 80%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-content:center;
+    margin-left: auto;
+  }
+
+  main .section {
+    width: 100%;
+  }
+
+  /********************menu*************/
+
+  .burger-menu {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 20%;
+    background-color: #E33849;
+    opacity: 0.8;
+    font-size: 1em;
+  }
+
+  .burger-menu > ul {
+    font-weight: bolder;
+    display: flex;
+    flex-flow: column nowrap;
+    align-content:space-around;
+    margin: auto;
+    height: auto;
+    width: 80%;
+  }
+
+
+  .burger-menu ul:hover {
+    border: none;
+  }
+
+  .burger-menu ul ul {
+    padding-left: 0;
+    margin-top: 50px;
+    width: auto;
+  }
+
+  .menu i {
+    display: none;
   }
 
   /********************Prestations*************/
