@@ -270,7 +270,7 @@ h1 {
   height: 480px;
   margin: auto;
   margin-bottom: 30px;
-  border: 1px solid #e5e5e5;
+  border: 3px solid #e5e5e5;
   border-radius: 4px;
   position: relative;
   padding: 24px;
@@ -323,6 +323,10 @@ h1 {
   content: '–';
 }
 
+.packages ul li em::before {
+  content: "";
+}
+
 .packages ul {
   list-style-type: none;
   /*padding-bottom: 20px;*/
@@ -343,17 +347,13 @@ h1 {
   height: 48px;
   width: 50%;
   /*margin-left: 20%;*/
-  margin: 10% 0 0 20%;
+  margin: 0 0 0 20%;
   /*display: flex;
   justify-content: center;*/
 }
 
 .packages button:hover {
   background-color: #C72C48;
-}
-
-.packages ul li em::before {
-  content: none;
 }
 
 .packages p {
@@ -468,12 +468,20 @@ h1 {
 }
 
 .formulaire li i {
- color: #E33849;
- position: absolute;
- left: 20%;
- padding: 18px;
+  color: #E33849;
+  position: absolute;
+  left: 20%;
+  padding: 18px;
 }
 
+iframe {
+  width: 100%;
+  height: 120px;
+  position: absolute;
+  left: 0;
+  border-top: 3px solid #E33849 !important;
+  margin-top: 70px;
+}
 
 /*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 $$$$$$$$$$$$$$$$$$ TABLET $$$$$$$$$$$$$$$$$$$$$$$$
@@ -485,6 +493,37 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
   h1 {
     left: -1%;
   }
+
+/****************Menu******************************/
+
+#burger-shower, .hamburger {
+  display: none;
+}
+
+.burger-menu {
+  position: fixed;
+  top: 0;
+  /*left: 0;*/
+  z-index: 2;
+  display: block;
+}
+
+.burger-menu ul {
+  display: flex;
+  background-color: #3F4847;
+  list-style-type: none;
+  margin: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /*justify-content: center;*/
+  /*align-content: center;*/
+  width: 100%;
+}
+
+.burger-menu ul li a{
+  color: #E33849;
+  padding: 1em 3em;
+}
 
 
 
@@ -538,8 +577,6 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
   width: 40%
 }
 
-
-
 /********************Contact****************/
 
 .formulaire input, .formulaire textarea {
@@ -579,8 +616,10 @@ margin: 65px auto auto 15%;
 }
 
 .formulaire li i {
-left: 65%;
+left: 63%;
 }
+
+
 
 
 }
@@ -657,6 +696,13 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
   /********************Prestations*************/
 .packages {
   width: 18%;
+  height: 450px;
+}
+
+
+/*********************Contact******************/
+.formulaire li i {
+left: 65%;
 }
 
 }
