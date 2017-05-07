@@ -17,7 +17,7 @@
     <body>
 
         <!-- img d'accueil recouvrant tout l'écran -->
-        <div>
+        <div id="homepage">
           <div class="logo"></div>
         </div>
 
@@ -32,12 +32,12 @@
           </label>
           <nav class="burger-menu">
             <ul>
-              <li><a href="#">Accueil </a></li>
-              <li><a href="#">L'entreprise </a></li>
-              <li><a href="#">Nos réalisations </a></li>
-              <li><a href="#">Nos prestations </a></li>
-              <li><a href="#">Notre équipe </a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="#homepage">Accueil </a></li>
+              <li><a href="#presentation">L'entreprise </a></li>
+              <li><a href="#realisation">Nos réalisations </a></li>
+              <li><a href="#prestation">Nos prestations </a></li>
+              <li><a href="#equipe">Notre équipe </a></li>
+              <li><a href="#contact">Contact</a></li>
               <li id="social">
                 <ul>
                   <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
@@ -56,7 +56,7 @@
         <main>
 
           <!-- ecriture d'une petite présentation de l'entreprise  -->
-          <section class="presentation">
+          <section class="presentation" id="presentation">
             <h2><span>Spotlight</span> en quelques mots</h2>
             <hr>
             <video src="videofile.ogg" autoplay poster="posterimage.jpg">
@@ -66,7 +66,7 @@
           </section>
 
           <!-- ecriture de la rubrique des réalisations, ici on créera un carousel   -->
-          <section class="realisation">
+          <section class="realisation" id="realisation">
             <h2>Ils nous ont fait <span>confiance</span></h2>
             <hr>
             <div class="carousel">
@@ -86,7 +86,7 @@
           </section>
 
           <!-- ecriture de la rubrique des packages - pricing  -->
-          <section class="prestation">
+          <section class="prestation" id="prestation">
             <h2>Les <span>prestations</span> proposées</h2>
             <hr>
           <div>
@@ -149,7 +149,7 @@
           </section>
 
           <!-- ecriture de la rubrique présentation de l'équipe  -->
-          <section class="equipe">
+          <section class="equipe" id="equipe">
             <h2>Une <span>équipe</span> brillante</h2>
             <hr>
             <div>
@@ -167,7 +167,7 @@
           </section>
 
           <!-- ecriture de la rubrique contact  -->
-          <section class="contact">
+          <section class="contact" id="contact">
             <h2>Discutons de vos <span>projets</span></h2>
             <hr>
             <div class="formulaire">
