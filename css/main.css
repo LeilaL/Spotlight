@@ -556,7 +556,7 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
 }
 
 .formulaire select {
-  width: 20%;
+  width: 50%;
 }
 
 .formulaire {
@@ -577,6 +577,7 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
 .formulaire ul {
   display: inline-block;
   width: 35%;
+  padding-left: 0;
 }
 
 .formulaire li i {
