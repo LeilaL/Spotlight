@@ -170,36 +170,50 @@
           <section class="contact">
             <h2>Discutons de vos <span>projets</span></h2>
             <hr>
-            <div>
-              <form action="">
+            <div class="formulaire">
+              <form class="line">
 
                 <label><input type="text" placeholder="Nom &amp; Prénom"></label>
 
-                <label><input type="text" placeholder="Société" required></label>
+                <label><input type="text" placeholder="Société *" required></label>
 
-                <label><input type="tel" placeholder="Numéro" required></label>
+                <label><input type="tel" placeholder="Numéro *" required></label>
 
-                <label><input type="email" placeholder="Email" required></label>
+                <label><input type="email" placeholder="Email *" required></label>
 
-                <label for="">
-                <select name="" id="">
+                <label for="subject">Sujet</label>
+                <select name="sujet" id="subject">
                   <option value="prix">Prix</option>
                   <option value="conseil">Conseil</option>
                   <option value="sav">SAV</option>
                   <option value="gueuler">Coup de gueule</option>
                   <option value="compliment">Compliment</option>
                 </select>
-                </label>
+
 
                 <label>
-                  <textarea name="" id="" cols="30" rows="10" placeholder="Votre question..."></textarea>
+                  <textarea name="text" placeholder="Votre message..."></textarea>
                 </label>
 
-                <input type="submit" value"envoyer">
+                <input type="submit" name="bouton" value"envoyer">
+
               </form>
 
+              <ul>
+                <li><i class="fa fa-phone fa-lg" aria-hidden="true"></i></li>
+                <li>Tel: 0320693664</li>
+                <li>Fax: 0320745986</li>
+                <li><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></li>
+                <li>contact.spotlight.fr</li>
+                <li><i class="fa fa-map-marker fa-lg" aria-hidden="true"></i></li>
+                <li>1600 Amphitheatre Parkway</li>
+                <li>Mountain View, Californie</li>
+              </ul>
+              </div>
+              <div>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.623790155075!2d-122.08613318469254!3d37.422366179825154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fba027f087f8f%3A0xd86b06710e8fcc35!2sGoogle+Bldg+40%2C+1600+Amphitheatre+Pkwy%2C+Mountain+View%2C+CA+94043%2C+%C3%89tats-Unis!5e0!3m2!1sfr!2sfr!4v1494169311971" width="600" height="450" frameborder="0" style="border:0" allowfullscreen=""></iframe>
             </div>
-            <iframe src="" width="" height=""></iframe>
+
           </section>
 
         </main>
