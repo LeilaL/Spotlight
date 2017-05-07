@@ -417,14 +417,64 @@ h1 {
 
 
 /****************Contact******************************/
+.line{
+  display: flex;
+  /*flex-wrap: wrap;*/
+  flex-direction: column;
+  margin-left: 15%;
+}
 
+/*.line input{*/
+  /*padding: 8px;*/
+/*}*/
 
+.formulaire input, .formulaire textarea{
+  border-radius: 0;
+  border: 2px solid grey;
+  margin: 5px 0;
+  width: 80%;
+  border-radius: 4px;
+  padding: 8px;
+}
 
+.formulaire textarea{
+  height: 80px;
+  padding: 8px;
+}
 
+.formulaire select {
+  width: 40%;
+  margin-left: 25px;
+}
 
+.formulaire input[name="bouton"] {
+  width: 30%;
+  /*margin-left: 85px;*/
+  background-color: #E33849;
+  border: 1px solid lightgrey;
+  position: relative;
+  left: 30%;
+  font-weight: bold;
+}
 
+.formulaire ul {
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  margin-left: 20%;
+}
 
+.formulaire ul li {
+  width: 63%;
+  padding: 8px;
+}
 
+.formulaire li i {
+ color: #E33849;
+ position: absolute;
+ left: 20%;
+ padding: 18px;
+}
 
 
 /*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
@@ -492,12 +542,48 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
 
 }
 
+/*$$$$$$$$$TABLET BIS$$$$$$$$$$$$*/
+@media (min-width: 800px) {
 
+  /********************Contact*************/
 
+.formulaire input, .formulaire textarea {
+  width: 100%;
+}
 
+.formulaire input[name="bouton"] {
+  left: 5%;
+}
 
+.formulaire select {
+  width: 20%;
+}
 
+.formulaire {
+  display: flex;
+}
 
+.line {
+  /*display: inline-block;*/
+  width: 35%;
+  border-right: 4px solid #E33849;
+  padding-right: 13%;
+}
+
+.line input  {
+  width: 100%;
+}
+
+.formulaire ul {
+  display: inline-block;
+  width: 35%;
+}
+
+.formulaire li i {
+  left: 68%;
+}
+
+}
 
 
 
