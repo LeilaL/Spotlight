@@ -89,32 +89,63 @@
           <section class="prestation">
             <h2>Les <span>prestations</span> proposées</h2>
             <hr>
-            <div>
-              <p>
-                <h3></h3>
-                <span></span>
-                <!-- on peut mettre du texte où on veut, étant donné que l'on se trouve dans un p -->
-                <button></button>
-              </p>
+          <div>
+            <article class="packages">
+                <h3>Basic</h3>
+                <p>Formule basique.</p><br>
+                <span>Basic</span><br>
+                <ul>
+                  <li><em>Dans ce forfait :</em></li>
+                  <li> Études des besoins</li>
+                  <li> Conseils</li>
+                  <li> Méthodologie de travail</li>
+                  <li> Identité visuelle</li>
+                </ul>
+                <button>Essayez gratuitement</button>
+            </article>
 
-              <p>
-                <h3></h3>
-                <span></span>
-                <button></button>
-              </p>
+            <article class="packages">
+                <h3>Starter</h3>
+                <p>Pour les jeunes marques et indépendants.</p><br>
+                <span>Débutant</span><br>
+                <ul>
+                  <li><em>Dans ce forfait :</em></li>
+                  <li> Conseils</li>
+                  <li> Méthodologie de travail</li>
+                  <li> Création de site internet</li>
+                  <li> Audit de site web</li>
+                </ul>
+                <button>Devis</button>
+            </article>
 
-              <p>
-                <h3></h3>
-                <span></span>
-                <button></button>
-              </p>
+            <article class="packages">
+                <h3>Pro</h3>
+                <p>Business en croissance.</p><br>
+                <span>Intermédiaire</span><br>
+                <ul>
+                  <li><em>Dans ce forfait :</em></li>
+                  <li> Conseils et gestion projet</li>
+                  <li> Création de site internet</li>
+                  <li> Optimisation du SEO</li>
+                  <li> Développement</li>
+                </ul>
+                <button>Devis</button>
+            </article>
 
-              <p>
-                <h3></h3>
-                <span></span>
-                <button></button>
-              </p>
-            </div>
+            <article class="packages">
+                <h3>Entreprise</h3>
+                <p>Sites e-commerce confirmés.</p><br>
+                <span>Expert</span><br>
+                <ul>
+                  <li><em>Dans ce forfait :</em></li>
+                  <li> Conseils et audit</li>
+                  <li> Identité de marque</li>
+                  <li> Services web</li>
+                  <li> Marketing web</li>
+                </ul>
+                <button>Devis</button>
+            </article>
+           </div>
           </section>
 
           <!-- ecriture de la rubrique présentation de l'équipe  -->
@@ -139,23 +170,19 @@
           <section class="contact">
             <h2>Discutons de vos <span>projets</span></h2>
             <hr>
-            <div>
-              <form action="">
+            <div class="formulaire">
+              <form class="line">
 
-                <label for=""></label>
-                <input type="text">
+                <label><input type="text" placeholder="Nom &amp; Prénom"></label>
 
-                <label for=""></label>
-                <input type="text">
+                <label><input type="text" placeholder="Société *" required></label>
 
-                <label for=""></label>
-                <input type="text">
+                <label><input type="tel" placeholder="Numéro *" required></label>
 
-                <label for=""></label>
-                <input type="text">
+                <label><input type="email" placeholder="Email *" required></label>
 
-                <label for=""></label>
-                <select name="" id="">
+                <label for="subject">Sujet</label>
+                <select name="sujet" id="subject">
                   <option value="prix">Prix</option>
                   <option value="conseil">Conseil</option>
                   <option value="sav">SAV</option>
@@ -163,14 +190,30 @@
                   <option value="compliment">Compliment</option>
                 </select>
 
-                <label for=""></label>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
 
-                <input type="submit" value"envoyer">
+                <label>
+                  <textarea name="text" placeholder="Votre message..."></textarea>
+                </label>
+
+                <input type="submit" name="bouton" value"envoyer">
+
               </form>
 
+              <ul>
+                <li><i class="fa fa-phone fa-lg" aria-hidden="true"></i></li>
+                <li>Tel: 0320693664</li>
+                <li>Fax: 0320745986</li>
+                <li><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></li>
+                <li>contact.spotlight.fr</li>
+                <li><i class="fa fa-map-marker fa-lg" aria-hidden="true"></i></li>
+                <li>1600 Amphitheatre Parkway</li>
+                <li>Mountain View, Californie</li>
+              </ul>
+              </div>
+              <div>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.623790155075!2d-122.08613318469254!3d37.422366179825154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fba027f087f8f%3A0xd86b06710e8fcc35!2sGoogle+Bldg+40%2C+1600+Amphitheatre+Pkwy%2C+Mountain+View%2C+CA+94043%2C+%C3%89tats-Unis!5e0!3m2!1sfr!2sfr!4v1494169311971" width="600" height="450" frameborder="0" style="border:0" allowfullscreen=""></iframe>
             </div>
-            <iframe src="" width="" height=""></iframe>
+
           </section>
 
         </main>

@@ -92,25 +92,17 @@ h1 {
 .menu {
   position: fixed;
   z-index: 2;
-  /*width: 200px;*/
 }
-
-/*.burger-menu ul:nth-child(1) {*/
-  /*background-color: #3F4847;*/
-/*}*/
 
 #social ul {
   background-color: none;
   border-top: none;
-  /*margin-right: 25px;*/
 }
 
-#social i {
-  /*margin-right: 15px;*/
-}
-
-header nav ul {
- list-style-type: none;
+#social>ul i  {
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
 }
 
 /*avant le clic*/
@@ -120,9 +112,9 @@ header nav ul {
 
 .burger-menu ul {
   display: none;
-  /*height: auto;*/
   flex-flow: row wrap;
   max-width: 100%;
+  list-style-type: none;
 }
 
 .hamburger {
@@ -130,8 +122,9 @@ header nav ul {
   position: fixed;
   justify-content: center!important;
   margin: auto;
-  bottom: 5px;
+  bottom: 0;
   width: 100%;
+  background-color: #3F4847;
 }
 
 .hamburger i {
@@ -158,7 +151,6 @@ header nav ul {
  color: white;
  transition: 1s;
  position: inherit;
- /*margin-top: -80px;*/
 }
 
 .burger-shower:checked ~ .burger-menu>ul {
@@ -181,6 +173,7 @@ header nav ul {
   position: fixed;
   text-align: center;
   transition: 1s;
+  background-color: transparent;
 }
 
 .burger-menu ul a {
@@ -196,22 +189,12 @@ header nav ul {
   align-items: center;
   line-height: 35px;
   min-width: 48%;
-  /*text-align: center;*/
 }
 
 .burger-menu ul ul{
   display: flex;
   flex-flow: row nowrap;
 }
-
-/*.burger-menu ul li:nth-child(1) {*/
-  /*margin-left: 46px;*/
-/*}*/
-
-/*.burger-menu ul li:nth-child(6) {*/
-  /*margin-right: 43px;*/
-/*}*/
-
 
 
 /****************Accueil******************************/
@@ -275,6 +258,112 @@ header nav ul {
 
 
 /****************Prestations**************************/
+.prestation div {
+  margin: auto;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  /*position: relative;*/
+}
+
+.packages {
+  color: gray;
+  width: 80%;
+  height: 480px;
+  margin: auto;
+  margin-bottom: 30px;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+  position: relative;
+  padding: 24px;
+  /*z-index: 1;*/
+  font-family: arial;
+/*  display: flex;
+  flex-flow: row wrap;*/
+}
+
+.packages span {
+  display: inline-block;
+  position: relative;
+  height: 24px;
+  padding: 0 15px;
+  border-radius: 4px;
+  border: 1px solid #e5e5e5;
+  background-color: #E33849;
+  color: black;
+  font-size: 10px;
+  line-height: 24px;
+  z-index: 1;
+}
+
+/*.packages div::before {
+  display: block;
+  position: absolute;
+  top: 38%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #e5e5e5;
+  content: '';
+  z-index: 1;
+}*/
+
+.packages:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+  box-shadow: 0 0 90px 0 rgba(0,0,0,0.23);
+  transition: 0.4s;
+}
+
+.packages h3 {
+  color: #3F4847;
+  font-size: 24px;
+  font-weight: 300px;
+}
+
+.packages ul li::before {
+  content: '–';
+}
+
+.packages ul {
+  list-style-type: none;
+  /*padding-bottom: 20px;*/
+  line-height: 1.8;
+  border-bottom: 1px solid #e5e5e5;
+  width: 90%;
+  /*padding-left: 10px;*/
+  padding: 0 0 20px 10px;
+  /*margin-left: -24px;*/
+}
+
+.packages button {
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+  background-color: #E33849;
+  color: #3F4847;
+  font-weight: bold;
+  height: 48px;
+  width: 50%;
+  /*margin-left: 20%;*/
+  margin: 10% 0 0 20%;
+  /*display: flex;
+  justify-content: center;*/
+}
+
+.packages button:hover {
+  background-color: #C72C48;
+}
+
+.packages ul li em::before {
+  content: none;
+}
+
+.packages p {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e5e5e5;
+}
 
 /****************Equipe*******************************/
 
@@ -328,14 +417,64 @@ header nav ul {
 
 
 /****************Contact******************************/
+.line{
+  display: flex;
+  /*flex-wrap: wrap;*/
+  flex-direction: column;
+  margin-left: 15%;
+}
 
+/*.line input{*/
+  /*padding: 8px;*/
+/*}*/
 
+.formulaire input, .formulaire textarea{
+  border-radius: 0;
+  border: 2px solid grey;
+  margin: 5px 0;
+  width: 80%;
+  border-radius: 4px;
+  padding: 8px;
+}
 
+.formulaire textarea{
+  height: 80px;
+  padding: 8px;
+}
 
+.formulaire select {
+  width: 40%;
+  margin-left: 25px;
+}
 
+.formulaire input[name="bouton"] {
+  width: 30%;
+  /*margin-left: 85px;*/
+  background-color: #E33849;
+  border: 1px solid lightgrey;
+  position: relative;
+  left: 30%;
+  font-weight: bold;
+}
 
+.formulaire ul {
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  margin-left: 20%;
+}
 
+.formulaire ul li {
+  width: 63%;
+  padding: 8px;
+}
 
+.formulaire li i {
+ color: #E33849;
+ position: absolute;
+ left: 20%;
+ padding: 18px;
+}
 
 
 /*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
@@ -394,18 +533,59 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
   33.33%, 48% {left: -100%; /*image 4, 5, 6*/}
   66.66%, 81% {left: -200%; /*image 7, 8, 9*/}
   }
+
+
+/********************Prestations*************/
+.packages {
+  width: 40%
 }
 
 
 
+/********************Contact****************/
+
+.formulaire input, .formulaire textarea {
+width: 100%;
+}
+
+.formulaire input[name="bouton"] {
+left: 5%;
+width: 100px;
+}
+
+.formulaire select {
+width: 50%;
+}
+
+.formulaire {
+display: flex;
+}
+
+.line {
+/*display: inline-block;*/
+width: 35%;
+border-right: 4px solid #E33849;
+padding-right: 13%;
+}
+
+.line input  {
+width: 100%;
+}
+
+.formulaire ul {
+display: inline-block;
+width: 35%;
+padding-left: 0;
+/*margin-left: 15%;*/
+margin: 65px auto auto 15%;
+}
+
+.formulaire li i {
+left: 65%;
+}
 
 
-
-
-
-
-
-
+}
 
 
 
@@ -419,5 +599,10 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
   h1 {
     left: -1%;
   }
+
+  /********************Prestations*************/
+.packages {
+  width: 18%;
+}
 
 }
