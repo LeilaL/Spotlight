@@ -43,6 +43,10 @@ body > div {
   background-image: url("../img/logo3.png");
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
 h2 {
   color: #3F4847;
   font-weight: lighter;
@@ -625,11 +629,15 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
 
 @media (min-width: 900px) {
 
-
   /********************Accueil*************/
 
+  #homepage {
+    position: relative;
+    z-index: 3;
+  }
   h1 {
-    left: 7%;
+    z-index: 4;
+    left: -0.8%;
   }
 
   /********************mise en page générale*************/
@@ -655,7 +663,7 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
     left: 0;
     height: 100vh;
     width: 20%;
-    background-color: #E33849;
+    background-color: #3F4847; /*#E33849; ou rose ???*/
     opacity: 0.8;
     font-size: 1em;
   }
