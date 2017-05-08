@@ -202,6 +202,31 @@ h1 {
 
 /****************Présentation*************************/
 
+.presentation {
+  margin-top: 50px!important;
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: justify;
+}
+
+.presentation p, .presentation iframe{
+  width: 80%;
+  max-width: 560px;
+  /*align-content: center;*/
+  margin: 5px auto;
+  line-height: 25px;
+}
+
+.presentation p span {
+  font-family: 'spotlight';
+  font-size: 1.7em;
+  font-weight: bolder;
+}
+
+.presentation iframe {
+  display: none;
+  background-color: white;
+}
 /****************Réalisation**************************/
 
 /*CAROUSEL */
@@ -486,7 +511,13 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
     left: -1%;
   }
 
+  /****************présentation**************************/
 
+  .presentation iframe {
+    display: block;
+    max-width: 550px;
+    height: 312px;
+  }
 
   /****************Réalisation**************************/
 
