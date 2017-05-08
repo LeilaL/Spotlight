@@ -534,6 +534,34 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
 
 /****************Menu******************************/
 
+#burger-shower, .hamburger {
+  display: none;
+}
+
+.burger-menu {
+  position: fixed;
+  top: 0;
+  /*left: 0;*/
+  z-index: 2;
+  display: block;
+}
+
+.burger-menu ul {
+  display: flex;
+  background-color: #3F4847;
+  list-style-type: none;
+  margin: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /*justify-content: center;*/
+  /*align-content: center;*/
+  width: 100%;
+}
+
+.burger-menu ul li a{
+  color: #E33849;
+  padding: 1em 3em;
+}
 
   /****************présentation**************************/
 
