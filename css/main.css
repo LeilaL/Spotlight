@@ -379,8 +379,8 @@ h1 {
   font-weight: bold;
   height: 48px;
   width: 60%;
-  /*margin-left: 20%;*/
-  margin: 10% 0 0 20%;
+  margin-left: 20%;
+  /*margin: 10% 0 0 20%;*/
   /*display: flex;
   justify-content: center;*/
 }
@@ -511,6 +511,13 @@ h1 {
  padding: 18px;
 }
 
+.contact iframe {
+  width: 100%;
+  height: 120px;
+  /*position: absolute;*/
+  margin-top: 50px;
+  border-top: 3px solid #E33849;
+}
 
 /*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 $$$$$$$$$$$$$$$$$$ TABLET $$$$$$$$$$$$$$$$$$$$$$$$
@@ -522,6 +529,9 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
   h1 {
     left: -1%;
   }
+
+/******************Menu*****************************/
+
 
   /****************présentation**************************/
 
