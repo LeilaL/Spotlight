@@ -684,6 +684,13 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
     border: none;
   }
 
+  .burger-menu a:hover {
+    border-left: 3px solid #E33849;
+    padding-left: 7px;
+    margin-left: -10px;
+    color: #E33849;
+  }
+
   .burger-menu ul ul {
     padding-left: 0;
     margin-top: 50px;
