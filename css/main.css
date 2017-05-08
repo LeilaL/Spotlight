@@ -276,6 +276,7 @@ h1 {
   padding: 24px;
   /*z-index: 1;*/
   font-family: arial;
+  font-size: 14px
 /*  display: flex;
   flex-flow: row wrap;*/
 }
@@ -345,7 +346,7 @@ h1 {
   color: #3F4847;
   font-weight: bold;
   height: 48px;
-  width: 50%;
+  width: 60%;
   /*margin-left: 20%;*/
   margin: 0 0 0 20%;
   /*display: flex;
@@ -702,7 +703,7 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
 
 /*********************Contact******************/
 .formulaire li i {
-left: 65%;
+  left: 71%;
 }
 
 }
