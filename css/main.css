@@ -511,7 +511,7 @@ h1 {
   padding: 18px;
 }
 
-iframe {
+.formulaire iframe {
   width: 100%;
   height: 120px;
   position: absolute;
@@ -534,34 +534,6 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
 
 /****************Menu******************************/
 
-#burger-shower, .hamburger {
-  display: none;
-}
-
-.burger-menu {
-  position: fixed;
-  top: 0;
-  /*left: 0;*/
-  z-index: 2;
-  display: block;
-}
-
-.burger-menu ul {
-  display: flex;
-  background-color: #3F4847;
-  list-style-type: none;
-  margin: auto;
-  flex-direction: row;
-  flex-wrap: wrap;
-  /*justify-content: center;*/
-  /*align-content: center;*/
-  width: 100%;
-}
-
-.burger-menu ul li a{
-  color: #E33849;
-  padding: 1em 3em;
-}
 
   /****************présentation**************************/
 
@@ -756,7 +728,7 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
     left: 0;
     height: 100vh;
     width: 20%;
-    background-color: #E33849; 
+    background-color: #E33849;
     opacity: 0.8;
     font-size: 1em;
   }
