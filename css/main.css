@@ -101,7 +101,6 @@ h1 {
 }
 
 #social ul {
-  background-color: none;
   border-top: none;
 }
 
@@ -336,7 +335,6 @@ h1 {
 .packages h3 {
   color: #3F4847;
   font-size: 24px;
-  font-weight: 300px;
 }
 
 .packages ul li::before {
@@ -350,7 +348,7 @@ h1 {
 .packages ul {
   list-style-type: none;
   padding-bottom: 20px;*/
-  line-height: 1.8;
+  /*line-height: 48px;*/
   border-bottom: 1px solid #e5e5e5;
   width: 90%;
   padding: 0 0 20px 10px;
@@ -364,10 +362,7 @@ h1 {
   font-weight: bold;
   height: 48px;
   width: 60%;
-  margin-left: 20%;
   margin: 0 0 0 20%;
-  /*display: flex;
-  justify-content: center;*/
 }
 
 .packages button:hover {
@@ -687,8 +682,8 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
     padding-right: 13%;
     }
 
-    .line input  {
-    width: 100%;
+    .line input {
+      width: 100%;
     }
 
     .formulaire ul {
@@ -701,7 +696,6 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
     .formulaire li i {
     left: 63%;
     }
-
 }
 
 
