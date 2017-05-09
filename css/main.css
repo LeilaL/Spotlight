@@ -101,7 +101,6 @@ h1 {
 }
 
 #social ul {
-  background-color: none;
   border-top: none;
 }
 
@@ -203,8 +202,6 @@ h1 {
 }
 
 
-/****************Accueil******************************/
-
 /****************Présentation*************************/
 
 .presentation {
@@ -257,7 +254,6 @@ h1 {
   min-height: 100%;
 	margin: 0;
   padding: 0;
-	/*padding: 0;*/
 	display: flex;
   justify-content: space-between;
 
@@ -269,15 +265,15 @@ h1 {
 }
 
 @keyframes AutoSlide {
-100%, 0%, 5% {left: 0px; /*1ère image*/}
-11.11%, 16% {left: -100%; /*2ème image*/}
-22.22%, 27% {left: -200%; /*3ème image*/}
-33.33%, 38% {left: -300%; /*4ème image*/}
-44.44%, 49% {left: -400%; /*5ème image*/}
-55.55%, 60% {left: -500%; /*6ème image*/}
-66.66%, 71% {left: -600%; /*7ème image*/}
-77.77%, 82% {left: -700%; /*8ème image*/}
-88.88%, 98% {left: -800%; /*9ème image*/}
+  100%, 0%, 5% {left: 0px; /*1ère image*/}
+  11.11%, 16% {left: -100%; /*2ème image*/}
+  22.22%, 27% {left: -200%; /*3ème image*/}
+  33.33%, 38% {left: -300%; /*4ème image*/}
+  44.44%, 49% {left: -400%; /*5ème image*/}
+  55.55%, 60% {left: -500%; /*6ème image*/}
+  66.66%, 71% {left: -600%; /*7ème image*/}
+  77.77%, 82% {left: -700%; /*8ème image*/}
+  88.88%, 98% {left: -800%; /*9ème image*/}
 }
 
 
@@ -285,7 +281,6 @@ h1 {
 .carouselslide p{
   display: none;
   opacity: 0;
-  /*transition: 3s;*/
 }
 
 
@@ -337,7 +332,6 @@ h1 {
 .packages h3 {
   color: #3F4847;
   font-size: 24px;
-  font-weight: 300px;
 }
 
 .packages ul li::before {
@@ -350,7 +344,7 @@ h1 {
 
 .packages ul {
   list-style-type: none;
-  line-height: 1.8;
+  /*line-height: 48px;*/
   border-bottom: 1px solid #e5e5e5;
   width: 90%;
   padding: 0 0 20px 10px;
@@ -364,7 +358,6 @@ h1 {
   font-weight: bold;
   height: 48px;
   width: 60%;
-  margin-left: 20%;
   margin: 0 0 0 20%;
 }
 
@@ -415,7 +408,6 @@ h1 {
 .equipe figure:hover .equipedetail {
   height: 78px;
   min-width: 100%;
-  /*border-top : 3px solid #E33849;*/
 }
 
 .equipe span {
@@ -436,7 +428,6 @@ h1 {
   flex-direction: column;
   margin-left: 15%;
 }
-
 
 .formulaire input, .formulaire textarea{
   border-radius: 0;
@@ -459,7 +450,6 @@ h1 {
 
 .formulaire input[name="bouton"] {
   width: 30%;
-  /*margin-left: 85px;*/
   background-color: #E33849;
   border: 1px solid lightgrey;
   position: relative;
@@ -504,60 +494,62 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
 @media (min-width: 600px) {
 
 
-  h1 {
-    left: -1%;
-    z-index: 8;
+    h1 {
+      left: -1%;
+      z-index: 8;
+    }
+
+    body>div {
+      z-index: 4;
+      position: relative;
+    }
+
+  /******************Menu*****************************/
+   .hamburger {
+     display: none;
+   }
+
+
+   .burger-menu ul:hover {
+     border-top: none;
+   }
+
+   .burger-menu ul{
+     display: flex;
+     width: 100%;
+     position: fixed;
+     top: 0;
+     flex-flow: row wrap;
+     justify-content: center;
+     background-color: #3F4847;
+     padding: 10px 0;
+     margin-top: 0;
+     text-align: center;
+   }
+
+   .burger-menu ul li {
+      min-width: 30%;
+   }
+
+
+  #social ul  {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 5px;
+    top: 35vh;
+    width: auto;
+    background-color: white;
   }
 
-  body>div {
-    z-index: 4;
-    position: relative;
+
+  #social ul li {
+    margin-top: 10px;
   }
 
-/******************Menu*****************************/
- .hamburger {
-   display: none;
- }
-
-
- .burger-menu ul:hover {
-   border-top: none;
- }
-
- .burger-menu ul{
-   display: flex;
-   width: 100%;
-   position: fixed;
-   top: 0;
-   flex-flow: row wrap;
-   justify-content: center;
-   background-color: #3F4847;
-   padding: 10px 0;
-   margin-top: 0;
-   text-align: center;
- }
-
-.burger-menu ul li {
-  min-width: 30%;
-}
-
-#social ul  {
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  right: 5px;
-  top: 35vh;
-  width: auto;
-  background-color: white;
-}
-
-#social ul li {
- margin-top: 10px;
-}
-
-#social li i {
-  color: #E33849;
-}
+  #social li i {
+    color: #E33849;
+  }
 
   /****************présentation**************************/
 
@@ -571,13 +563,9 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
 
   /*CAROUSEL */
   .realisation .carousel {
-    /*justify-content: center;*/
-    /*align-items: center;*/
     margin: auto;
     padding: 0;
     display: flex;
-    /*max-height: 500px;*/
-    /*width: 100%;*/
     min-width: 100%;
     overflow: hidden;
     position: relative;
@@ -605,104 +593,102 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
   	animation-timing-function: ease-in-out;
   }
 
-  @keyframes AutoSlide {
-  100%, 0%, 15% {left: 0px; /*image 1, 2, 3*/}
-  33.33%, 48% {left: -100%; /*image 4, 5, 6*/}
-  66.66%, 81% {left: -200%; /*image 7, 8, 9*/}
-  }
+    @keyframes AutoSlide {
+    100%, 0%, 15% {left: 0px; /*image 1, 2, 3*/}
+    33.33%, 48% {left: -100%; /*image 4, 5, 6*/}
+    66.66%, 81% {left: -200%; /*image 7, 8, 9*/}
+    }
 
 
   /*CAROUSEL EFFET HOVER !!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
-  .carouselslide img:hover + p,
-  .carouselslide img:active + p {
+    .carouselslide img:hover + p,
+    .carouselslide img:active + p {
+      display: flex;
+      flex-flow: column nowrap;
+      width: 33.33333%;
+      height: 100%;
+      text-align: center;
+      position: absolute;
+      margin: auto;
+      justify-content: center;
+      color: white;
+      z-index: 1;
+      background-color: #3F4847;
+      opacity: 0.7;
+      line-height: 30px;
+    }
+
+    .carouselslide p span {
+      font-size: 1.4em;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+      font-weight: bolder;
+      border-bottom: 2px solid white;
+    }
+
+    .carouselslide img:first-child:hover + p {left: 0;}
+
+    .carouselslide img:nth-of-type(2):hover + p {left: 33.333333%;}
+
+    .carouselslide img:nth-of-type(3):hover + p {left: 66.666666%;}
+
+    .carouselslide img:nth-of-type(4):hover + p {left: 100%;}
+
+    .carouselslide img:nth-of-type(5):hover + p {left: 133.333333%;}
+
+    .carouselslide img:nth-of-type(6):hover + p {left: 166.666666%;}
+
+    .carouselslide img:nth-of-type(7):hover + p {left: 200%;}
+
+    .carouselslide img:nth-of-type(8):hover + p {left: 233.333333%;}
+
+    .carouselslide img:nth-of-type(9):hover + p {left: 266.6666666%;}
+
+    /********************Prestations*************/
+    .packages {
+      width: 40%
+    }
+
+    /********************Contact****************/
+
+    .formulaire input, .formulaire textarea {
+    width: 100%;
+    }
+
+    .formulaire input[name="bouton"] {
+    left: 5%;
+    width: 100px;
+    }
+
+    .formulaire select {
+    width: 50%;
+    }
+
+    .formulaire {
     display: flex;
-    flex-flow: column nowrap;
-    width: 33.33333%;
-    height: 100%;
-    text-align: center;
-    position: absolute;
-    margin: auto;
-    justify-content: center;
-    color: white;
-    z-index: 1;
-    background-color: #3F4847;
-    opacity: 0.7;
-    line-height: 30px;
-  }
+    }
 
-  .carouselslide p span {
-    font-size: 1.4em;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
-    font-weight: bolder;
-    border-bottom: 2px solid white;
-  }
+    .line {
+    width: 35%;
+    border-right: 4px solid #E33849;
+    padding-right: 13%;
+    }
 
-  .carouselslide img:first-child:hover + p {left: 0;}
+    .line input {
+      width: 100%;
+    }
 
-  .carouselslide img:nth-of-type(2):hover + p {left: 33.333333%;}
+    .formulaire ul {
+    display: inline-block;
+    width: 35%;
+    padding-left: 0;
+    margin: 65px auto auto 15%;
+    }
 
-  .carouselslide img:nth-of-type(3):hover + p {left: 66.666666%;}
-
-  .carouselslide img:nth-of-type(4):hover + p {left: 100%;}
-
-  .carouselslide img:nth-of-type(5):hover + p {left: 133.333333%;}
-
-  .carouselslide img:nth-of-type(6):hover + p {left: 166.666666%;}
-
-  .carouselslide img:nth-of-type(7):hover + p {left: 200%;}
-
-  .carouselslide img:nth-of-type(8):hover + p {left: 233.333333%;}
-
-  .carouselslide img:nth-of-type(9):hover + p {left: 266.6666666%;}
-
-/********************Prestations*************/
-.packages {
-  width: 40%
-}
-
-/********************Contact****************/
-
-.formulaire input, .formulaire textarea {
-  width: 100%;
-}
-
-.formulaire input[name="bouton"] {
-  left: 5%;
-  width: 100px;
-}
-
-.formulaire select {
-  width: 50%;
-}
-
-.formulaire {
-  display: flex;
-}
-
-.line {
-  width: 35%;
-  border-right: 4px solid #E33849;
-  padding-right: 13%;
-}
-
-.line input  {
-  width: 100%;
-}
-
-.formulaire ul {
-  display: inline-block;
-  width: 35%;
-  padding-left: 0;
-  margin: 65px auto auto 15%;
-}
-
-.formulaire li i {
-  left: 63%;
-}
-
-}
+    .formulaire li i {
+    left: 63%;
+    }
 
 
 
@@ -719,6 +705,7 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
     position: relative;
     z-index: 3;
   }
+
   h1 {
     z-index: 4;
     left: -0.8%;
@@ -742,7 +729,6 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
 
   .burger-menu {
     display: flex;
-    /*flex-direction: column;*/
     position: fixed;
     align-content: center;
     top: 0;
@@ -810,15 +796,15 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
 
 
   /********************Prestations*************/
-.packages {
-  width: 18%;
-  height: 450px;
-}
+  .packages {
+    width: 18%;
+    height: 450px;
+  }
 
 
-/*********************Contact******************/
-.formulaire li i {
-  left: 71%;
-}
+  /*********************Contact******************/
+  .formulaire li i {
+    left: 71%;
+  }
 
 }
