@@ -795,11 +795,7 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
   }
 
 
-  /********************Prestations*************/
-  .packages {
-    width: 18%;
-    height: 450px;
-  }
+
 
 
   /*********************Contact******************/
@@ -807,4 +803,19 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
     left: 71%;
   }
 
+}
+
+@media (min-width: 1095px) {
+  /********************Prestations*************/
+  .packages {
+    width: 18%;
+    height: 450px;
+    font-size: 13px;
+    font-weight: bold;
+  }
+
+  .packages button {
+    width: 67%;
+    margin-top: 50px;
+  }
 }
