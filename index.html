@@ -8,8 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
-
+        <link rel="icon" href="img/logorose.png">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
@@ -17,36 +16,36 @@
     <body>
 
         <!-- img d'accueil recouvrant tout l'écran -->
-        <div>
+        <div id="homepage">
           <div class="logo"></div>
         </div>
 
 
         <!-- ecriture header -->
         <header>
-          <H1>Spotlight</H1>
-        <div class="menu">
-          <input type="checkbox" id="burger-shower" class="burger-shower">
-          <label for="burger-shower" class="hamburger">
-           <i class="fa fa-bars" aria-hidden="true"></i>
-          </label>
-          <nav class="burger-menu">
-            <ul>
-              <li><a href="#">Accueil |</a></li>
-              <li><a href="#">L'entreprise </a></li>
-              <li><a href="#">Nos réalisations |</a></li>
-              <li><a href="#">Nos prestations </a></li>
-              <li><a href="#">Notre équipe |</a></li>
-              <li><a href="#">Contact</a></li>
-              <li class="social">
-                <ul>
-                  <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                  <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                  <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                </ul>
-              </li>
-            </ul>
-          </nav>
+          <H1><a href="#presentation">Spotlight</a></H1>
+          <div class="menu">
+            <input type="checkbox" id="burger-shower" class="burger-shower">
+            <label for="burger-shower" class="hamburger">
+             <i class="fa fa-bars" aria-hidden="true"></i>
+            </label>
+            <nav class="burger-menu">
+              <ul>
+                <li><a href="#homepage">Accueil </a></li>
+                <li><a href="#presentation">L'entreprise </a></li>
+                <li><a href="#realisation">Nos réalisations </a></li>
+                <li><a href="#prestation">Nos prestations </a></li>
+                <li><a href="#equipe">Notre équipe </a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li id="social">
+                  <ul>
+                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
         </div>
         </header>
 
@@ -56,104 +55,188 @@
         <main>
 
           <!-- ecriture d'une petite présentation de l'entreprise  -->
-          <section class="presentation">
+          <section class="presentation" id="presentation">
             <h2><span>Spotlight</span> en quelques mots</h2>
             <hr>
-            <video src="videofile.ogg" autoplay poster="posterimage.jpg">
-
-            </video>
-            <p></p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/I9UEubO29Zw" allowfullscreen></iframe>
+            <p>Créée en 2017, notre agence est née d'une rencontre, blablabla, composée de spécialistes dans chacun des domaines du web. <br><br>
+            Basée à Roubaix, <span>Spotlight</span> allie qualité et proximité pour des idées toujours plus lumineuses.
+            </p>
           </section>
 
           <!-- ecriture de la rubrique des réalisations, ici on créera un carousel   -->
-          <section class="realisation">
+          <section class="realisation" id="realisation">
             <h2>Ils nous ont fait <span>confiance</span></h2>
             <hr>
             <div class="carousel">
               <div class="carouselslide">
 
                 <img src="img/portfolio/entreprise1.jpg" alt="screenshot page d'accueil client 1">
+                <p>
+                  <span>Guigette</span> <br>
+                  Refonte de site vitrine <br>
+                  1500€ <br>
+                  2 semaines
+                </p>
                 <img src="img/portfolio/entreprise2.jpg" alt="screenshot page d'accueil client 2">
+                <p>
+                  <span>Chambre Kids</span> <br>
+                  Conception identité visuelle <br>
+                  500€ <br>
+                  3 jours
+                </p>
                 <img src="img/portfolio/entreprise3.jpg" alt="screenshot page d'accueil client 3">
+                <p>
+                  <span>Delile</span> <br>
+                  Conseil et application SEO <br>
+                  500€ <br>
+                  1 semaine
+                </p>
                 <img src="img/portfolio/entreprise4.jpg" alt="screenshot page d'accueil client 4">
+                <p>
+                  <span>Idées Plein Table</span> <br>
+                  Migration vers solution prestashop <br>
+                  2500€ <br>
+                  3 semaines
+                </p>
                 <img src="img/portfolio/entreprise5.jpg" alt="screenshot page d'accueil client 5">
+                <p>
+                  <span>Domiciliations</span> <br>
+                  Création site vitrine <br>
+                  1200€ <br>
+                  10 jours
+                </p>
                 <img src="img/portfolio/entreprise6.jpg" alt="screenshot page d'accueil client 6">
+                <p>
+                  <span>Eugène</span> <br>
+                  Accompagnement site e-commerce <br>
+                  3500€ <br>
+                  3 semaines
+                </p>
                 <img src="img/portfolio/entreprise7.jpg" alt="screenshot page d'accueil client 7">
+                <p>
+                  <span>Eurodif</span> <br>
+                  Création E-commerce et maintenanceRefonte de site vitrine <br>
+                  5500€ <br>
+                  ...
+                </p>
                 <img src="img/portfolio/entreprise8.jpg" alt="screenshot page d'accueil client 8">
+                <p>
+                  <span>Grégory Couranceau</span> <br>
+                  Création de site vitrine <br>
+                  Identité visuelle <br>
+                  2000€ <br>
+                  2 semaines
+                </p>
                 <img src="img/portfolio/entreprise9.jpg" alt="screenshot page d'accueil client 9">
+                <p>
+                  <span>Ile de Ré</span> <br>
+                  Gestion de projet <br>
+                  4500€ <br>
+                  5 semaines
+                </p>
               </div>
             </div>
           </section>
 
           <!-- ecriture de la rubrique des packages - pricing  -->
-          <section class="prestation">
+          <section class="prestation" id="prestation">
             <h2>Les <span>prestations</span> proposées</h2>
             <hr>
             <div>
-              <p>
-                <h3></h3>
-                <span></span>
-                <!-- on peut mettre du texte où on veut, étant donné que l'on se trouve dans un p -->
-                <button></button>
-              </p>
+              <article class="packages">
+                  <h3>Basic</h3>
+                  <p>Formule basique.</p><br>
+                  <span>Basic</span><br>
+                  <ul>
+                    <li><em>Dans ce forfait :</em></li>
+                    <li> Études des besoins</li>
+                    <li> Conseils</li>
+                    <li> Méthodologie de travail</li>
+                    <li> Identité visuelle</li>
+                  </ul>
+                  <button>Essayez gratuitement</button>
+              </article>
 
-              <p>
-                <h3></h3>
-                <span></span>
-                <button></button>
-              </p>
+              <article class="packages">
+                  <h3>Starter</h3>
+                  <p>Pour les jeunes marques et indépendants.</p><br>
+                  <span>Débutant</span><br>
+                  <ul>
+                    <li><em>Dans ce forfait :</em></li>
+                    <li> Conseils</li>
+                    <li> Méthodologie de travail</li>
+                    <li> Création de site internet</li>
+                    <li> Audit de site web</li>
+                  </ul>
+                  <button>Devis</button>
+              </article>
 
-              <p>
-                <h3></h3>
-                <span></span>
-                <button></button>
-              </p>
+              <article class="packages">
+                  <h3>Pro</h3>
+                  <p>Business en croissance.</p><br>
+                  <span>Intermédiaire</span><br>
+                  <ul>
+                    <li><em>Dans ce forfait :</em></li>
+                    <li> Conseils et gestion projet</li>
+                    <li> Création de site internet</li>
+                    <li> Optimisation du SEO</li>
+                    <li> Développement</li>
+                  </ul>
+                  <button>Devis</button>
+              </article>
 
-              <p>
-                <h3></h3>
-                <span></span>
-                <button></button>
-              </p>
+              <article class="packages">
+                  <h3>Entreprise</h3>
+                  <p>Sites e-commerce confirmés.</p><br>
+                  <span>Expert</span><br>
+                  <ul>
+                    <li><em>Dans ce forfait :</em></li>
+                    <li> Conseils et audit</li>
+                    <li> Identité de marque</li>
+                    <li> Services web</li>
+                    <li> Marketing web</li>
+                  </ul>
+                  <button>Devis</button>
+              </article>
             </div>
           </section>
 
           <!-- ecriture de la rubrique présentation de l'équipe  -->
-          <section class="equipe">
+          <section class="equipe" id="equipe">
             <h2>Une <span>équipe</span> brillante</h2>
             <hr>
             <div>
               <figure>
-                <img src="" alt="Portrait dessin Leila">
-                <figcaption><span>Leila</span> | Maître de l'univers</figcaption>
+                <img src="img/equipe/leila.png" alt="Portrait dessin Leila">
+                <figcaption><span>Leila </span> Co-fondatrice</figcaption>
+                <figcaption class="equipedetail">"Spécialiste front et graphisme, je m'occupe de votre design pour un rendu moderne et à votre image"</figcaption>
               </figure>
               <figure>
-                <img src="" alt="Portrait dessin Farrah">
-                <figcaption><span>Farrah</span>  | dog sitter </figcaption>
+                <img src="img/equipe/farrah.png" alt="Portrait dessin Farrah">
+                <figcaption><span>Farrah </span> Co-fondatrice </figcaption>
+                <figcaption class="equipedetail">"Je bosse sur le back et l'ergonomie du site, afin d'optimiser l'expérience utilisateur"</figcaption>
               </figure>
             </div>
           </section>
 
           <!-- ecriture de la rubrique contact  -->
-          <section class="contact">
+          <section class="contact" id="contact">
             <h2>Discutons de vos <span>projets</span></h2>
             <hr>
-            <div>
-              <form action="">
+            <div class="formulaire">
+              <form class="line">
 
-                <label for=""></label>
-                <input type="text">
+                <label><input type="text" placeholder="Nom &amp; Prénom"></label>
 
-                <label for=""></label>
-                <input type="text">
+                <label><input type="text" placeholder="Société *" required></label>
 
-                <label for=""></label>
-                <input type="text">
+                <label><input type="tel" placeholder="Numéro *" required></label>
 
-                <label for=""></label>
-                <input type="text">
+                <label><input type="email" placeholder="Email *" required></label>
 
-                <label for=""></label>
-                <select name="" id="">
+                <label for="subject">Sujet</label>
+                <select name="sujet" id="subject">
                   <option value="prix">Prix</option>
                   <option value="conseil">Conseil</option>
                   <option value="sav">SAV</option>
@@ -161,14 +244,30 @@
                   <option value="compliment">Compliment</option>
                 </select>
 
-                <label for=""></label>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
 
-                <input type="submit" value"envoyer">
+                <label>
+                  <textarea name="text" placeholder="Votre message..."></textarea>
+                </label>
+
+                <input type="submit" name="bouton" value="Envoyer">
+
               </form>
 
+              <ul>
+                <li><i class="fa fa-phone fa-lg" aria-hidden="true"></i></li>
+                <li>Tel: 0320693664</li>
+                <li>Fax: 0320745986</li>
+                <li><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></li>
+                <li>contact@spotlight.fr</li>
+                <li><i class="fa fa-map-marker fa-lg" aria-hidden="true"></i></li>
+                <li>1600 Amphitheatre Parkway</li>
+                <li>Mountain View, Californie</li>
+              </ul>
             </div>
-            <iframe src="" width="" height=""></iframe>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.623790155075!2d-122.08613318469254!3d37.422366179825154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fba027f087f8f%3A0xd86b06710e8fcc35!2sGoogle+Bldg+40%2C+1600+Amphitheatre+Pkwy%2C+Mountain+View%2C+CA+94043%2C+%C3%89tats-Unis!5e0!3m2!1sfr!2sfr!4v1494169311971" width="600" height="450" style="border:0" allowfullscreen=""></iframe>
+
+
           </section>
 
         </main>
