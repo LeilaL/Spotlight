@@ -254,7 +254,6 @@ h1 {
   min-height: 100%;
 	margin: 0;
   padding: 0;
-	/*padding: 0;*/
 	display: flex;
   justify-content: space-between;
 
@@ -282,7 +281,6 @@ h1 {
 .carouselslide p{
   display: none;
   opacity: 0;
-  /*transition: 3s;*/
 }
 
 
@@ -346,12 +344,7 @@ h1 {
 
 .packages ul {
   list-style-type: none;
-<<<<<<< HEAD
-  padding-bottom: 20px;*/
   /*line-height: 48px;*/
-=======
-  line-height: 1.8;
->>>>>>> master2
   border-bottom: 1px solid #e5e5e5;
   width: 90%;
   padding: 0 0 20px 10px;
@@ -436,10 +429,6 @@ h1 {
   margin-left: 15%;
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> master2
 .formulaire input, .formulaire textarea{
   border-radius: 0;
   border: 2px solid grey;
@@ -574,13 +563,9 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
 
   /*CAROUSEL */
   .realisation .carousel {
-    /*justify-content: center;*/
-    /*align-items: center;*/
     margin: auto;
     padding: 0;
     display: flex;
-    /*max-height: 500px;*/
-    /*width: 100%;*/
     min-width: 100%;
     overflow: hidden;
     position: relative;
@@ -667,7 +652,6 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
 
     /********************Contact****************/
 
-<<<<<<< HEAD
     .formulaire input, .formulaire textarea {
     width: 100%;
     }
@@ -705,47 +689,6 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
     .formulaire li i {
     left: 63%;
     }
-=======
-.formulaire input, .formulaire textarea {
-  width: 100%;
-}
-
-.formulaire input[name="bouton"] {
-  left: 5%;
-  width: 100px;
-}
-
-.formulaire select {
-  width: 50%;
-}
-
-.formulaire {
-  display: flex;
-}
-
-.line {
-  width: 35%;
-  border-right: 4px solid #E33849;
-  padding-right: 13%;
-}
-
-.line input  {
-  width: 100%;
-}
-
-.formulaire ul {
-  display: inline-block;
-  width: 35%;
-  padding-left: 0;
-  margin: 65px auto auto 15%;
-}
-
-.formulaire li i {
-  left: 63%;
-}
-
->>>>>>> master2
-}
 
 
 
