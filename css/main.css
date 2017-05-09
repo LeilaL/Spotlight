@@ -511,6 +511,7 @@ h1 {
   padding: 18px;
 }
 
+
 .contact iframe {
   width: 100%;
   height: 120px;
@@ -685,8 +686,7 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
     color: white;
     z-index: 1;
     background-color: #3F4847;
-    background-color: #E33849;
-    opacity: 0.8;
+    opacity: 0.7;
     line-height: 30px;
   }
 
@@ -811,7 +811,7 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
     left: 0;
     height: 100vh;
     width: 20%;
-    background-color: #3F4847; /*#E33849; ou rose ???*/
+    background-color: #E33849;
     opacity: 0.8;
     font-size: 1em;
   }
@@ -832,10 +832,10 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
   }
 
   .burger-menu a:hover {
-    border-left: 3px solid #E33849;
+    border-left: 3px solid #3F4847;
     padding-left: 7px;
     margin-left: -10px;
-    color: #E33849;
+    color: #3F4847;
   }
 
   .burger-menu ul ul {
